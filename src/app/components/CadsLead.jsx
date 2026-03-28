@@ -10,6 +10,10 @@ const CadsLead = () => {
       nome: formData.get("nome"),
       whatsapp: formData.get("whatsapp"),
       email: formData.get("email"),
+      status:'Pendente',
+      data: new Date().toLocaleDateString('PT-BR'),
+      horario: new Date().toLocaleTimeString('PT-BR'),
+      origem:'Landing Page'
     };
 
 try {
