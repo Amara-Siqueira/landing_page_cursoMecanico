@@ -11,11 +11,11 @@ const CadsLead = () => {
       whatsapp: formData.get("whatsapp"),
       email: formData.get("email"),
       status:'Pendente',
-      data: new Date().toLocaleDateString('PT-BR'),
-      horario: new Date().toLocaleTimeString('PT-BR'),
-      origem:'Landing Page'
+      data: formData.get('data'),
+      horario: formData.get('horario'),
+      origem:formData.get('origem')
     };
-
+console.log(dados)
 try {
     const enviando=   await fetch("/api/enviar", {
       method: "POST",
@@ -82,6 +82,9 @@ try {
               className="  sm:w-full bg-red-600 py-4 px-4 mt-5  "
               value={"QUERO SER UM MÊCANICO VALORIZADO"}
             />
+            <input type="hidden"  value={new Date().toLocaleDateString('PT-BR')} name="data" />
+            <input type="hidden"  value={new Date().toLocaleTimeString('PT-BR')} name="horario" />
+            <input type="hidden"  value={'Landing Page'} name="origem" />
           </form>
           <p className="text-center text-xs text-gray-500 mt-2">
             Suas informações estão 100% seguras. Não enviamos spam.
