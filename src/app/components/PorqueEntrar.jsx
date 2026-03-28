@@ -9,7 +9,7 @@ const PorqueEntrar = () => {
       <div className="mb-10 mt-10 text-center">
         <h1 className="text-3xl font-bold text-white">POR QUE ENTRAR PARA O MERCADO AUTOMOTIVO?</h1>
       </div>
-      {/* cards */}
+  
       <div className="flex flex-col sm:flex-row gap-6 max-w-5xl mx-auto ">
 
         <div className="ganharDinheiro bg-[#0a0a0a] hover:bg-[#1a1919] p-4  border-l-4 border-orange-500">

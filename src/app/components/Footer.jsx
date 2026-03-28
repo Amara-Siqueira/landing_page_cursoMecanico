@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col bg-[#1A1A1A] p-4">
-          {/**ICON */}
+         
           <div className="flex flex-row items-center gap-4  ">
           <IoShieldCheckmarkOutline  size={40} className="text-amber-500"/>
           <h1>Garantia Incondicional</h1>
